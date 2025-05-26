@@ -1,113 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milvus Strategic</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            background-color: #000;
-            color: #e0e0e0;
-            font-family: 'Playfair Display', serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh;
-            padding: 0 1rem;
-        }
-        header {
-            text-align: center;
-            margin-top: 80px;
-        }
-        h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        h2 {
-            font-size: 1.5rem;
-            font-style: italic;
-            margin-top: 10px;
-            color: #f0f0f0;
-        }
-        section {
-            max-width: 800px;
-            margin-top: 60px;
-        }
-        .section-title {
-            font-size: 1.8rem;
-            border-bottom: 1px solid #fff;
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form input, .contact-form textarea {
-            background: #111;
-            color: #e0e0e0;
-            border: 1px solid #444;
-            padding: 10px;
-            margin-bottom: 15px;
-            font-size: 1rem;
-        }
-        .contact-form button {
-            background: #222;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-        .contact-form button:hover {
-            background: #444;
-        }
-        footer {
-            margin-top: 80px;
-            font-size: 0.9rem;
-            color: #ccc;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milvus Strategic</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kepler Std Light', serif;
+      background-color: #000;
+      color: #d8d8d8;
+    }
+
+    .centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .main-title {
+      font-family: 'Canela', serif;
+      font-size: 6.8em;
+      color: #e0e0e0;
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-size: 2.55em;
+      color: #ccc;
+      margin-top: 0.5em;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    nav a {
+      font-family: 'Kepler Std Light', serif;
+      color: #c0c0c0;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .page {
+      display: none;
+      padding: 80px 60px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: justify;
+      font-size: 1.1em;
+    }
+
+    .active {
+      display: block;
+    }
+
+    form input, form textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #111;
+      border: 1px solid #666;
+      color: #fff;
+      font-family: 'Kepler Std Light', serif;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #333;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #555;
+    }
+
+    .back-button {
+      display: block;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .back-button a {
+      font-family: 'Kepler Std Light', serif;
+      color: #c0c0c0;
+      text-decoration: none;
+      font-size: 1em;
+    }
+
+    .back-button a:hover {
+      color: #fff;
+    }
+
+    .section-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.6em;
+      margin-bottom: 40px;
+    }
+  </style>
 </head>
 <body>
+  <div class="centered" id="home">
+    <div class="main-title">Milvus Strategic</div>
+    <div class="subtitle">Consulting & Trading</div>
+  </div>
 
-<header>
-    <h1>Milvus Strategic</h1>
-    <h2>Consulting</h2>
-</header>
-
-<section>
+  <div class="page" id="about">
     <div class="section-title">About Us</div>
-    <p>Milvus Strategic is a forward-thinking firm specializing in high-level consulting and wholesale trading services. We help clients navigate strategic challenges with insight and precision, delivering results with discretion and professionalism.</p>
-</section>
+    <p>For a quarter of a century, Milvus Strategic Consulting has been the silent architect behind some of the most successful ventures in international business, legal frameworks, and global trade...</p>
+    <div class="back-button"><a href="#" onclick="goHome()">Back</a></div>
+  </div>
 
-<section>
-    <div class="section-title">Services</div>
-    <ul>
-        <li>Business and Strategic Consulting</li>
-        <li>Wholesale Trading Solutions</li>
-    </ul>
-</section>
+  <div class="page" id="services">
+    <div class="section-title">Our Services</div>
+    <p><strong>Strategic Consulting That Moves Markets</strong>...</p>
+    <div class="back-button"><a href="#" onclick="goHome()">Back</a></div>
+  </div>
 
-<section>
-    <div class="section-title">Contact</div>
-    <form class="contact-form" name="contact" method="POST" data-netlify="true">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
+  <div class="page" id="contact">
+    <form onsubmit="sendForm(); return false;">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Phone" />
+      <textarea name="message" placeholder="Text of request" rows="6" required></textarea>
+      <button type="submit">Send Request</button>
     </form>
-</section>
+    <div class="back-button"><a href="#" onclick="goHome()">Back</a></div>
+  </div>
 
-<footer>
-    &copy; 2025 Milvus Strategic — All rights reserved.
-</footer>
+  <nav>
+    <a href="#" onclick="showPage('about')">About Us</a>
+    <a href="#" onclick="showPage('services')">Services</a>
+    <a href="#" onclick="showPage('contact')">Contact</a>
+  </nav>
 
+  <script>
+    function showPage(id) {
+      document.getElementById('home').style.display = 'none';
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function goHome() {
+      document.getElementById('home').style.display = 'flex';
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    }
+
+    function sendForm() {
+      alert("Thank you for your request. We will contact you shortly.");
+      document.querySelector('#contact form').reset();
+    }
+  </script>
 </body>
 </html>
