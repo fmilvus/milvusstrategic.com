@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Milvus Strategic</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kepler Std Light', serif;
+      background-color: black;
+      color: #E0F0F0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .centered {
+      text-align: center;
+      margin-top: 30vh;
+    }
+    h1 {
+      font-size: 4rem;
+      font-family: 'Canela', serif;
+      font-weight: normal;
+    }
+    h2 {
+      font-style: italic;
+      font-size: 1.5rem;
+    }
+    nav {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-family: 'Kepler Std Light', serif;
+    }
+    nav a {
+      color: #E0F0F0;
+      text-decoration: none;
+      font-weight: 300;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      display: none;
+    }
+    .visible {
+      display: block;
+    }
+    .back-button {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .back-button a {
+      color: #E0F0F0;
+      text-decoration: none;
+      font-weight: 300;
+    }
+    .back-button a:hover {
+      text-decoration: underline;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: transparent;
+      border: 1px solid #E0F0F0;
+      color: #E0F0F0;
+      margin-bottom: 10px;
+    }
+    form button {
+      padding: 10px 20px;
+      background-color: #E0F0F0;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('visible'));
+      document.getElementById(id).classList.add('visible');
+    }
+  </script>
+</head>
+<body>
+  <div id="home" class="section visible">
+    <div class="centered">
+      <h1>Milvus Strategic</h1>
+      <h2>Consulting & Trading</h2>
+    </div>
+    <nav>
+      <a href="#" onclick="showSection('about')">About Us</a>
+      <a href="#" onclick="showSection('services')">Services</a>
+      <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+  </div>
+
+  <div id="about" class="section container">
+    <h1 style="text-align:center;">About us</h1>
+    <p style="text-align:justify; white-space:pre-line;">
+For a quarter of a century, Milvus Strategic Consulting has been the silent architect behind some of the most successful ventures in international business, legal frameworks, and global trade. While others talk strategy, we craft it—with precision, foresight, and an unwavering commitment to outcomes.
+
+In a world where markets shift overnight and legal landscapes evolve by the hour, one truth remains: experience matters. And 25 years of it puts us in a league of our own.
+
+We are not just consultants—we are navigators in a complex world, trusted by corporations, entrepreneurs, and government entities alike. From structuring cross-border mergers to advising on regulatory frameworks, from optimizing global trade flows to resolving high-stakes legal challenges, Milvus is the name that appears behind the scenes when things need to be done right—the first time.
+
+What sets us apart?
+
+A proven track record across multiple countries
+
+Multidisciplinary experts in international law, trade strategy, and market entry
+
+Relationships, not transactions—because we believe in partnership, not paperwork
+
+Solutions tailored not to the norm, but to your next breakthrough
+
+The world has changed dramatically over the last 25 years—but one thing hasn’t: our commitment to being two steps ahead, always.
+
+If you're looking for conventional advice, there are many.
+If you're looking for strategic clarity, unmatched experience, and results that speak for themselves, there is only Milvus.
+
+25 years strong. And just getting started.
+    </p>
+    <div class="back-button"><a href="#" onclick="showSection('home')">Back</a></div>
+  </div>
+
+  <div id="services" class="section container">
+    <h1 style="text-align:center;">Our Services</h1>
+    <p style="text-align:justify; white-space:pre-line;">
+Strategic Consulting That Moves Markets
+For over 25 years, Milvus Strategic Consulting has delivered actionable intelligence, cross-border expertise, and high-impact solutions to clients navigating the complex global landscape. We don’t just advise—we empower transformation.
+
+1. International Business Strategy
+Navigate global markets with precision and power.
+We help clients expand, restructure, or reposition across borders by designing tailored strategies that minimize risk and maximize long-term value.
+
+Our services include:
+- Market entry and expansion strategy
+- Cross-border M&A advisory
+- Joint venture and partnership structuring
+- Competitive intelligence and benchmarking
+- International tax and corporate structuring
+
+2. Legal & Regulatory Consulting
+Complexity is our comfort zone.
+Milvus delivers strategic legal counsel with a commercial edge—especially in multi-jurisdictional, high-stakes environments. We align legal frameworks with business goals, ensuring compliance, continuity, and control.
+
+Expertise in:
+- International commercial law
+- Regulatory compliance and risk assessment
+- Contract negotiation and dispute resolution
+- Trade law and customs advisory
+- Legal audit for cross-border operations
+
+3. Global Wholesale Trading Advisory
+From sourcing to scaling—we guide your trade success.
+Whether you're entering a new market or optimizing your global trade network, we offer sharp, data-driven guidance to unlock operational efficiency and commercial opportunity.
+
+We assist in:
+- B2B wholesale strategy and market positioning
+- International supply chain optimization
+- Supplier due diligence and negotiation support
+- Trade finance and documentation compliance
+- Commodity and product-specific advisory
+
+4. Integrated Solutions for Government & Public Sector
+Trusted partners for public impact.
+Milvus works with ministries, trade bodies, and economic development agencies to strengthen international trade policies, attract investment, and support global economic cooperation.
+
+Why Choose Milvus?
+- 25+ years of global impact
+- Multilingual, multidisciplinary teams
+- Local insight with international reach
+- End-to-end support, from vision to execution
+
+When the stakes are high and the path is unclear, Milvus doesn’t follow trends—we define the direction.
+Let’s shape your strategy for what’s next.
+    </p>
+    <div class="back-button"><a href="#" onclick="showSection('home')">Back</a></div>
+  </div>
+
+  <div id="contact" class="section container">
+    <h1 style="text-align:center;">Contact</h1>
+    <form onsubmit="alert('Your request has been sent.'); return false;">
+      <label>Name:<br /><input type="text" required></label><br/>
+      <label>Email:<br /><input type="email" required></label><br/>
+      <label>Phone:<br /><input type="tel" required></label><br/>
+      <label>Text of request:<br /><textarea rows="6" required></textarea></label><br/>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="back-button"><a href="#" onclick="showSection('home')">Back</a></div>
+  </div>
+</body>
+</html>
