@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milvus Strategic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            color: #e0e0e0;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 0 1rem;
+        }
+        header {
+            text-align: center;
+            margin-top: 80px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-top: 10px;
+            color: #f0f0f0;
+        }
+        section {
+            max-width: 800px;
+            margin-top: 60px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            background: #111;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            background: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #444;
+        }
+        footer {
+            margin-top: 80px;
+            font-size: 0.9rem;
+            color: #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Milvus Strategic</h1>
+    <h2>Consulting</h2>
+</header>
+
+<section>
+    <div class="section-title">About Us</div>
+    <p>Milvus Strategic is a forward-thinking firm specializing in high-level consulting and wholesale trading services. We help clients navigate strategic challenges with insight and precision, delivering results with discretion and professionalism.</p>
+</section>
+
+<section>
+    <div class="section-title">Services</div>
+    <ul>
+        <li>Business and Strategic Consulting</li>
+        <li>Wholesale Trading Solutions</li>
+    </ul>
+</section>
+
+<section>
+    <div class="section-title">Contact</div>
+    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 Milvus Strategic — All rights reserved.
+</footer>
+
+</body>
+</html>
